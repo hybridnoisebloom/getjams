@@ -1,4 +1,5 @@
 # GetJams - get some new jams for ya mental
+# Released for Github on Oct 21 2014
 import musicbrainzngs as jams
 import random,sys,os,wx
 
