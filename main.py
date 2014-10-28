@@ -25,6 +25,7 @@ def GetSimilar(artist):
 class GetJamsWindow(wx.Frame):
 	def __init__(self,parent,title):
 		wx.Frame.__init__(self,parent,title=title,size=(640,300))
+		self.SetIcon(wx.Icon("icon.ico", wx.BITMAP_TYPE_ICO))
 		self.textbox = wx.TextCtrl(self, size=(126,30), pos=(250,20))
 		self.button = wx.Button(self, wx.ID_OK, " Genre ",pos=(250+36,55),size=(48+4,30))
 		self.button2 = wx.Button(self,wx.ID_OK, "Artist",pos=(250+42,55+30),size=(42,30))
@@ -42,5 +43,5 @@ class GetJamsWindow(wx.Frame):
 
 if __name__ == "__main__":
 	app = wx.App(False)
-	frame = GetJamsWindow(None, "GetJams")
+	frame = GetJamsWindow(None, "GetJams by Draven Stedman")
 	app.MainLoop()
